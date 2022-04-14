@@ -1,7 +1,7 @@
 // Kamil Kulak
 
-#ifndef __DEFINICJE_HPP__
-#define __DEFINICJE_HPP__
+#ifndef __DEFINICJE_HPPd__
+#define __DEFINICJE_HPPd__
 
 #include <iostream>
 

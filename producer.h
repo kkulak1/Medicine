@@ -1,5 +1,5 @@
-#ifndef __DEFINICJE_HPP__
-#define __DEFINICJE_HPP__
+#ifndef __DEFINICJE_HPPa__
+#define __DEFINICJE_HPPa__
 
 #include <iostream>
 
@@ -10,7 +10,7 @@ class Producer
     string name, address;
 
 public:
-    Producer(string name = "aa", string address = "aaa 2A");
+    Producer(string name = "Jan", string address = "Janow 2A");
 
     string get_name();
     string get_address();

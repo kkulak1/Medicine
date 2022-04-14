@@ -1,5 +1,5 @@
-#ifndef __DEFINICJE_HPP__
-#define __DEFINICJE_HPP__
+#ifndef __DEFINICJE_HPPc__
+#define __DEFINICJE_HPPc__
 
 #include <iostream>
 
@@ -12,6 +12,7 @@ class Ingredient
 
 public:
     Ingredient(string name, int amount);
+    Ingredient() = default;
 
     string get_name();
     int get_amount();

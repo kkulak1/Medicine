@@ -1,18 +1,19 @@
-#ifndef __DEFINICJE_HPP__
-#define __DEFINICJE_HPP__
+#ifndef __DEFINICJE_HPPb__
+#define __DEFINICJE_HPPb__
 
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include "medicine.h"
 
 using namespace std;
 
-class Open_file
+class Objects_from_txt
 {
-    string path;
+    vector<Medicine> medicines;
 
 public:
-    Open_file(string path);
+    Objects_from_txt(vector<Medicine> medicines);
 
     void read_from_txt(string path);
 };
