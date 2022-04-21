@@ -248,22 +248,28 @@ bool Medicine::operator>(const Medicine &med) const
     return capacity > med.capacity;
 }
 
-void Medicine::operatorposti()
+Medicine &Medicine::operator++()
 {
-    capacity++;
+    capacity += 10;
+    return *this;
 }
 
-void Medicine::operatorprei()
+Medicine Medicine::operator++(int)
 {
-    ++capacity;
+    Medicine old_capacity = *this;
+    ++(*this);
+    return old_capacity;
 }
 
-void Medicine::operatorpostd()
+Medicine &Medicine::operator--()
 {
-    capacity--;
+    capacity -= 10;
+    return *this;
 }
 
-void Medicine::operatorpred()
+Medicine Medicine::operator--(int)
 {
-    --capacity;
+    Medicine old_capacity = *this;
+    --(*this);
+    return old_capacity;
 }

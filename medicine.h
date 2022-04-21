@@ -55,10 +55,10 @@ public:
     bool operator>=(const Medicine &med) const;
     bool operator<(const Medicine &med) const;
     bool operator>(const Medicine &med) const;
-    void operatorposti();
-    void operatorprei();
-    void operatorpostd();
-    void operatorpred();
+    Medicine &operator++();
+    Medicine operator++(int);
+    Medicine &operator--();
+    Medicine operator--(int);
 
     void sort_ingr_by_amount();
     void sort_ingr_by_name();
