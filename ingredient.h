@@ -19,6 +19,8 @@ public:
 
     void set_name(string new_name);
     void set_amount(int new_amount);
+
+    bool operator==(const Ingredient &ingr) const;
 };
 
 #endif

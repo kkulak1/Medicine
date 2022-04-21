@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     if (argc < 2)
     {
-        cerr << "Incorrect number of command line arguments - the minimum is 2, got " << argc << endl;
+        cerr << "Incorrect number of command line arguments, expected 2, got " << argc << endl;
     }
 
     string path;
@@ -26,15 +26,9 @@ int main(int argc, char *argv[])
 
     medicines.read_from_txt(path);
 
-    int size = medicines_obj.size();
-    cout << size;
+    medicines.sort_by_amount();
 
-    // doesnt work yet
-
-    for (int i = 0; i < size; i++)
-    {
-        cout << medicines_obj[i].get_name() << endl;
-    }
+    medicines.show();
 
     return 0;
 }

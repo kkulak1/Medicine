@@ -30,6 +30,7 @@ public:
     int get_nr();
     Producer get_producer();
     Date get_date();
+    int get_nr_ingredients();
 
     void set_name(string new_name);
     void set_capacity(int new_capacity);
@@ -46,6 +47,21 @@ public:
     int count_ingredient(int amount);
     void sort_by_name();
     void sort_by_amount();
+
+    void show_ingredients();
+
+    bool operator==(Medicine med);
+    bool operator<=(const Medicine &med) const;
+    bool operator>=(const Medicine &med) const;
+    bool operator<(const Medicine &med) const;
+    bool operator>(const Medicine &med) const;
+    void operatorposti();
+    void operatorprei();
+    void operatorpostd();
+    void operatorpred();
+
+    void sort_ingr_by_amount();
+    void sort_ingr_by_name();
 };
 
 #endif

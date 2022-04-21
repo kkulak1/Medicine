@@ -35,3 +35,8 @@ void Ingredient::set_amount(int new_amount)
         amount = new_amount;
     }
 }
+
+bool Ingredient::operator==(const Ingredient &ingr) const
+{
+    return (this->name == ingr.name) && (this->amount == ingr.amount);
+}

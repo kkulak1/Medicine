@@ -16,6 +16,9 @@ public:
     Objects_from_txt(vector<Medicine> medicines);
 
     void read_from_txt(string path);
+    void show();
+    void sort_by_amount();
+    void sort_by_name();
 };
 
 #endif

@@ -1,2 +1,2 @@
-name 1000 name2 20 producer_name producer_address 1 1 1 2000 ingr1_name ingr1_amount
-name4 1000 name2 20 producer_name producer_address 1 1 1 2000 ingr1_name ingr1_amount
+Duac 100 Xdr 20 Jan_Kowalski Warszawa_30c 1 2 2 2005 cynk 10 zelazo 32 duax 20
+witamina_C 2000 c 1 Mateusz_Wysocki Suwalki_20d 2 10 9 2023 witamin_c 300 les 20 dak 500 maso 56
